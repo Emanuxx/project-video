@@ -1,0 +1,31 @@
+.button{
+    /* Inline-size es como width; y block-size es como height; */
+    inline-size: 42px;
+    block-size: 42px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button:active{
+    transform: scale(.9);
+}
+
+#play{
+    background-image: url(../images/play.svg);
+}
+
+#pause{
+   background-image: url(../images/pause.svg); 
+}
+
+#avanzar{
+    background-image: url(../images/+10.svg);
+}
+
+#retroceder{
+    background-image: url(../images/-10.svg);
+}

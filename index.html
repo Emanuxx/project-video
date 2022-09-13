@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Proyecto Video</title>
+</head>
+    <!-- Para mover etiquetas seleccionamos las mismas y despues presionamos "alt" + flechas y asi podremos mover las etiqueras con su contenido -->
+    <body>
+        <div class="wraper">
+            <div class="player">
+                <video id="video" poster="./images/poster.jpg" width="500px" src="./videos/lofi.mp4"></video>
+                <!-- Poner la propiedad "aria-label" y "title" son buenas practicas -->
+                <div class="player-overlay">
+                    <h2 class="player-title">Musica Para Programar</h2>
+                    <div class="player-actions">
+                        <button class="button" id="retroceder" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+                        <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+                        <button class="button" id="pause" hidden aria-label="Pausar" title="Pausar"></button>
+                        <button class="button" id="avanzar" aria-label="Avanzar 10 segundos" title="Avanzar 10 segundos"></button>
+                    </div>
+                    <!-- Como buena practica se recomienda empezar con el "./" de esta forma iniciamos en el index.html -->
+                    <!-- Recordar poner los atributos para que el vide tenga controles y as -->
+                    <div class="player-progress">
+                        <input id="progress" type="range" min="0" value="0" step="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
